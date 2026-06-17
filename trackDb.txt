@@ -1,0 +1,115 @@
+track ChIPseqsamples
+shortLabel ChIP-seq
+longLabel ChIP-seq samples
+type bigWig
+dimensions dimX=view dimY=conditions
+visibility dense
+subGroup1 view Views peaks=peaks signal=signal
+subGroup2 conditions Conditions K18la1100=K18la_1-100 K4me3control=K4me3_control K18la150=K18la_1-50 K18la1200=K18la_1-200
+autoScale group
+compositeTrack on
+
+    track peaks
+    shortLabel peaks
+    longLabel peaks
+    type bigBed
+    parent ChIPseqsamples
+    view peaks
+    visibility dense
+    
+            track K18la1100pk
+            bigDataUrl K18la1100pk.bigBed
+            shortLabel K18la_1-100 pk
+            longLabel K18la_1-100 peaks
+            type bigBed
+            color 191,139,0
+            parent peaks
+            priority 11.0
+            visibility full
+            subGroups conditions=K18la1100 view=peaks
+    
+            track K4me3controlpk
+            bigDataUrl K4me3controlpk.bigBed
+            shortLabel K4me3_control pk
+            longLabel K4me3_control peaks
+            type bigBed
+            color 191,0,0
+            parent peaks
+            priority 13.0
+            visibility full
+            subGroups conditions=K4me3control view=peaks
+    
+            track K18la150pk
+            bigDataUrl K18la150pk.bigBed
+            shortLabel K18la_1-50 pk
+            longLabel K18la_1-50 peaks
+            type bigBed
+            color 104,191,0
+            parent peaks
+            priority 15.0
+            visibility full
+            subGroups conditions=K18la150 view=peaks
+    
+            track K18la1200pk
+            bigDataUrl K18la1200pk.bigBed
+            shortLabel K18la_1-200 pk
+            longLabel K18la_1-200 peaks
+            type bigBed
+            color 0,191,36
+            parent peaks
+            priority 17.0
+            visibility full
+            subGroups conditions=K18la1200 view=peaks
+
+    track signal
+    shortLabel signal
+    longLabel signal
+    type bigWig
+    maxHeightPixels 100:50:8
+    parent ChIPseqsamples
+    view signal
+    visibility full
+    
+            track K18la1100bw
+            bigDataUrl K18la1100bw.bigWig
+            shortLabel K18la_1-100 bw
+            longLabel K18la_1-100 bigWig
+            type bigWig
+            color 212,170,57
+            parent signal
+            priority 12.0
+            visibility full
+            subGroups conditions=K18la1100 view=signal
+    
+            track K4me3controlbw
+            bigDataUrl K4me3controlbw.bigWig
+            shortLabel K4me3_control bw
+            longLabel K4me3_control bigWig
+            type bigWig
+            color 212,57,57
+            parent signal
+            priority 14.0
+            visibility full
+            subGroups conditions=K4me3control view=signal
+    
+            track K18la150bw
+            bigDataUrl K18la150bw.bigWig
+            shortLabel K18la_1-50 bw
+            longLabel K18la_1-50 bigWig
+            type bigWig
+            color 141,212,57
+            parent signal
+            priority 16.0
+            visibility full
+            subGroups conditions=K18la150 view=signal
+    
+            track K18la1200bw
+            bigDataUrl K18la1200bw.bigWig
+            shortLabel K18la_1-200 bw
+            longLabel K18la_1-200 bigWig
+            type bigWig
+            color 57,212,86
+            parent signal
+            priority 18.0
+            visibility full
+            subGroups conditions=K18la1200 view=signal
