@@ -1,0 +1,10 @@
+hub Lactylation
+
+shortLabel Lactylation
+
+longLabel H3K18la CUT&RUN pilot
+
+genomesFile genomes.txt
+
+email yourmail@here.com
+

@@ -18,7 +18,7 @@ compositeTrack on
     visibility dense
     
             track K18la1100pk
-            bigDataUrl K18la1100pk.bigBed
+            bigDataUrl K18la1100_error_pk.bigBed
             shortLabel K18la_1-100 pk
             longLabel K18la_1-100 peaks
             type bigBed
@@ -29,7 +29,7 @@ compositeTrack on
             subGroups conditions=K18la1100 view=peaks
     
             track K4me3controlpk
-            bigDataUrl K4me3controlpk.bigBed
+            bigDataUrl K4me3control_error_pk.bigBed
             shortLabel K4me3_control pk
             longLabel K4me3_control peaks
             type bigBed
@@ -40,7 +40,7 @@ compositeTrack on
             subGroups conditions=K4me3control view=peaks
     
             track K18la150pk
-            bigDataUrl K18la150pk.bigBed
+            bigDataUrl K18la150_error_pk.bigBed
             shortLabel K18la_1-50 pk
             longLabel K18la_1-50 peaks
             type bigBed
@@ -51,7 +51,7 @@ compositeTrack on
             subGroups conditions=K18la150 view=peaks
     
             track K18la1200pk
-            bigDataUrl K18la1200pk.bigBed
+            bigDataUrl K18la1200_error_pk.bigBed
             shortLabel K18la_1-200 pk
             longLabel K18la_1-200 peaks
             type bigBed
@@ -71,7 +71,7 @@ compositeTrack on
     visibility full
     
             track K18la1100bw
-            bigDataUrl K18la1100bw.bigWig
+            bigDataUrl K18la1100_error_bw.bigWig
             shortLabel K18la_1-100 bw
             longLabel K18la_1-100 bigWig
             type bigWig
@@ -82,7 +82,7 @@ compositeTrack on
             subGroups conditions=K18la1100 view=signal
     
             track K4me3controlbw
-            bigDataUrl K4me3controlbw.bigWig
+            bigDataUrl K4me3control_error_bw.bigWig
             shortLabel K4me3_control bw
             longLabel K4me3_control bigWig
             type bigWig
@@ -93,7 +93,7 @@ compositeTrack on
             subGroups conditions=K4me3control view=signal
     
             track K18la150bw
-            bigDataUrl K18la150bw.bigWig
+            bigDataUrl K18la150_error_bw.bigWig
             shortLabel K18la_1-50 bw
             longLabel K18la_1-50 bigWig
             type bigWig
@@ -104,7 +104,7 @@ compositeTrack on
             subGroups conditions=K18la150 view=signal
     
             track K18la1200bw
-            bigDataUrl K18la1200bw.bigWig
+            bigDataUrl K18la1200_error_bw.bigWig
             shortLabel K18la_1-200 bw
             longLabel K18la_1-200 bigWig
             type bigWig
